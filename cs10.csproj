@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<EnablePreviewFeatures>True</EnablePreviewFeatures>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- Look at globals.cs: <Using Include="System"/>-->
+		<Using Include="System.Console" Static="true"/>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Runtime.Experimental" Version="6.0.0" />
+	</ItemGroup>
+</Project>
